@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head> <title> My Personal Space </title> 
+<style>
+@font-face {font-family: 'Manrope';
+	src: url(Manrope-VariableFont_wght.ttf);}
+@font-face{font-family: 'Relationship of Melodrame';
+	src: url(relationship-of-melodrame.ttf);}
+@font-face{font-family: 'Aston script';
+	src: url(FontsFree-Net-AstonScript.ttf);}
+@font-face{font-family: Merriweather;
+	src: url(Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf);}
+@keyframes fadeIn{
+	from {opacity: 0;}
+	to{opacity: 1;}
+	}
+body {background-image: url('BACKGROUND.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	line-height: 67px;
+	animation: fadeIn 1.5s ease;
+	background-attachment: fixed;}
+.header{font-family: Relationship of Melodrame;
+	font-size: 60px;
+	text-align: center;
+	color: darkred;
+	margin-top:3px;
+	margin-bottom: 7px;}
+hr {background-color: darkred;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	height: 2px;}
+.mail img{cursor: pointer;
+	box-shadow: 6px 5px 5px black;
+	align: left;}
+#imageBox{display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);}
+#imageBox img{width: 300px;
+	box-shadow: 3px 5px 5px black;}
+.close{position: absolute;
+	top: -10px;
+	right: -10px;
+	background: darkred;
+	color: white;
+	border: none;
+	font-size: 18px;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 50%;}
+.firstpart{display: flex;
+	justify-content: center;
+	gap: 67px;}
+.firstpart p{font-size: 67px;
+	color: lightyellow;}
+.htwo{text-align: center;
+	font-family: Relationship of Melodrame;
+	color: darkred;
+	font-size: 45px;
+	margin-top: 5px;
+	margin-bottom: 5px;}
+.pone, .ptwo, .pthree, .pfour{font-family: manrope;
+	font-size: 10px;
+	color: lightyellow;
+	text-align: justify;
+	line-height: 13px;}
+.favorites{display: flex;
+	justify-content: center;
+	gap: 20px;
+	background-color: darkred;
+	padding: 10px;}
+.shone, .shtwo, .shthree, .shfour{font-family: Aston Script;
+	font-size: 12px;}
+.friends{margin-top: 7px;
+	border-radius: 10pt;}
+.hthree{font-family: Relationship of Melodrame;
+	font-size: 55px;
+	color: Darkred;}
+.friendz, .family{display: flex;
+	justify-content: center;
+	gap: 10px;}
+.friendz p{font-size: 67px;
+	color: darkred;}
+.pfive{font-family: Manrope;
+	color: darkred;
+	text-align: center;
+	font-size: 13px;
+	line-height: 13px;
+	margin-left: 90px;
+	margin-right: 90px;}
+.hthree{font-family: Relationship of Melodrame;
+	background-color: darkred;
+	color: lightyellow;
+	font-size: 55px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 3px;}
+.psix{font-family: Manrope;
+	line-height: 13px;
+	font-size: 13px;
+	text-align: justify;
+	color: darkred;
+	margin-right: 70px;}
+.family img{border-radius: 10pt;}
+.bck {display: inline-block;
+	text-decoration: none;
+	background-color: darkred;
+	color: lightyellow;
+	 margin: 100px;
+	border-radius: 5rem;
+	padding: 0.5rem 1.6rem;
+	font-size: 30px;
+	 font-family: forte;
+	 transition: 150ms ease;
+	 box-shadow: 5px 5px 10px black;}
+ .bck:hover{background: lightyellow;
+	color: darkred;
+	scale: 1.5;}
+</style>
+</head>
+<p class="header"> My Personal Space </p>
+<hr>
+<body>
+<div class="firstpart">
+<p>●○•</p>
+<div class="mail" onclick="showImage()">
+    <img src="mail.jpg" width="300px" height="200px">
+</div>
+<div id="imageBox"">
+    <button class="close" onclick="hideImage()">X</button>
+    <img src="me.jpg" >
+</div>
+<p> •○● </p>
+</div>
+<script>
+function showImage() {
+    document.getElementById("imageBox").style.display = "block";
+}
+
+function hideImage() {
+    document.getElementById("imageBox").style.display = "none";
+}
+</script>
+<p class="htwo"> --- Favorites --- </p>
+<div class="favorites">
+<p class="pone">
+<span class="shone">Movies</span><br>
+Right now, I still have a taste for romcom movies. I love how they're so fun and bright with a little drama in the middle that makes it so interesting. As a film lover, I have my top three personal favorite movies that I would watch again and again. Number one would be "10 Things I hate About you", a 2000s movie that still captures my soul every day. My number two movie would be "Flipped", an actual representation of childhood crush and first love. Their story is so cute and I love how realistic it is. It gives off enemies to lovers with a lot of adventure. My top three is "love untangled", a very cute Korean movie that made me feel a lot of mixed emotions. It was really the definition of highschool love and the thought of letting go because you have to. That sums up my taste in movies, I have a long long list but we're not ready for that.
+</p>
+
+<p class="ptwo">
+<span class="shtwo"> Music </span><br>
+I hope I'm not the only one who absolutely loves listening to music on the way home. I go quiet and start listening to songs while staring at the window, that's my ideal way to spend the day. I don't know if I have a good music taste but I love both pop and also calm songs. My top artists are CAS, and IV of spades. My number one favorite song is "Ma Meillure Ennemie" from Arcane. I love how its french and the beats. My number two is "Kabisado" by IV of Spades, an ideal song to listen especially during the sunset as it reflects the sun's beauty. My number three is "Opera House" by CAS, a very calm solemn music full of emotions especially when you realize its imeaning. At number four is "Earrings" by Malcolm Todd, a very fun and ideal song for feeling your emotions, it's like my crashout song. Lastly, number five is "Take a bite" by Beabadoobee, the beats and the lyrics are everything. 
+</p>
+
+<p class="pthree">
+<span class="shthree"> Food </span> <br>
+As I'm making this, I'm craving fries. My number one top tier food is french fries, or any type of fries. I love its crunch and it just really completes my whole day. Along with that, I also love pastry especially doughnuts. I love almost all type of bread especially if they have cheese or chocolate. A top tier bread for me is Spanish Bread, I just love its taste. Aside from those snacks, I also love seafood. I wanna say I'm so lucky to not be allergic to shrimps, crabs, or any type of fish. Even if its messy when I eat it, getting a taste of it is so worth it. My eyes would literally light up if I see seafood on our table, proving my true love for it.
+</p>
+
+<p class="pfour">
+<span class="shfour"> Hobbies </span><br>
+moving on to my favorite hobbies, I could say I'm more of an artistic person so when I have free time I'd prefer doing something creative. In my spare time I practice drawing, because its fun and I know that I can make use of it someday, like maybe as gifts or as a side job. Drawing also helps me discover a lot of skills like patience and discipline. Other than that I love watching movies and some tv shows. Right now I have a long list of films that I've been planning on watching this summer. Somehow I learn from the movies I watch, they help me reflect, and realize with the lessons they teach. My favorite hobby would be trying stuff, like trying to play the guitar, sing, basically anything I find interesting. Obviously that way I hone my skills and experience hidden talents.
+</p>
+</div>
+<p class="htwo"> Circle of Friends </p>
+<div class="friendz">
+<p>●○•</p>
+<img class="friends" src="friendsone.jpg" width="300" height="200">
+<img class="friends" src="friendstwo.jpg" width="200" height="200">
+<p> •○● </p>
+</div>
+<p class="pfive"> 
+Until now, our friendship is still strong, new people were also added and we're all glad about it. It's so fun to always have their back no matter the circumstance. If you decide to go absent, they''ll back you up! (I'm joking). We've spend most of our time together because we're classmates and because we love each other's company. When there are school events, the question "will you come?" never gets old because we always go together. It's crazy how we're all not capable of being alone that's why we need companions. Me personally, I'm very grateful for them. Every moment I share with them is worth it. They even went to our church gathering when I invited them! This circle is so fun and so playful, just the one I've wished for. This coming summer, I'm gonna miss them, I hope they're still my classmates because I don't think I see myself with a different circle. I love how we can all hang out and even when we do nothing, it's still fun. I hope I grow old with these guys.
+</p>
+<video width="300px" height="200px" controls>
+<source src="vidone.mp4" type="video/mp4">
+</video>
+<p class="hthree"> Family</p>
+<div class="family">
+<img src="picfour.jpg" width="300px" height="200px">
+<p class="psix">
+There are 5 of us in our family, but only 4 people inside our home. My brother is currently at his dorm in Laguna due to college that's why it's more empty in our house now. He still comes home from time to time and I appreciate that. Whenever we're complete, we eat outside which really captures a special moment. Next year, there will only be 3 of us in our home when my sister goes to college. Right now I'm cherishing all our moments together because I know it won't last long. TIme really flies by fast. Meanwhile my dad is getting old, he lowkey starts becoming very forgetful that's why I help him the best I can. He still works very hard alongside my mom. Our house is full of adventure, you never know what will happen next. Sometimes we get serious but honestly most of the time the house is full of laughter. In the picture on the left, my dad wasn't there but there are 6 of us right? Because my friend, Benj Antolin, and my brother's girlfriend, Junewil Octavio, are there. We consider them as a part of our family. My parents always ask about them, how they are doing, and what's happening with their life. Needless to say we are a very inclusive family, and we help while we can. I'm grateful.
+</p>
+</div>
+
+<a href="E-PORTFOLIO.html" class="bck"> back to home </a>
+
+</body>
+</html>
